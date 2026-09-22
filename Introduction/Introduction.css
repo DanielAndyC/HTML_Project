@@ -1,0 +1,12 @@
+h1{
+    color: green;
+}
+h2{
+    color: blue;
+}
+.justify{
+    text-align: justify;
+}
+.italic{
+    font-style: italic;
+}

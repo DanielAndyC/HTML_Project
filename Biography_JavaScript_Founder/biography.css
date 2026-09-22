@@ -1,0 +1,52 @@
+#page{
+    background-color: bisque;
+    border: 20px solid rgb(155, 198, 155);
+    padding: 100px;
+}
+
+.top_section{
+    height: 400px;
+}
+
+.bottom_section{
+    margin-top: 50px;
+    padding: 50px;
+}
+
+footer{
+    text-align: right;
+}
+
+h1, h2, h4{
+    margin: 0;
+    color: rgb(0, 0, 99);
+}
+
+h3{
+    font-size: 24pt;
+    text-align: center;
+}
+
+p{
+    margin-top: 30px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+li{
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img{
+    height: 300px;
+    border-radius: 50%;
+    border: 10px dotted salmon;
+    float: right;
+}
+
+#container{
+    border: dashed 5px rgb(114, 114, 165);
+    padding: 50px;
+    margin-top: 10px;
+}

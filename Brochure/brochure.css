@@ -1,0 +1,40 @@
+body{
+    width:auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(186, 232, 255);
+    background-image: url(https://images.pexels.com/photos/2583852/pexels-photo-2583852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#division{
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+}
+
+#img{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+}
+
+#text{
+    height: 80%;
+    width: 50%;
+    margin-right: 5px;
+    justify-content: center;
+}
+
+#info{
+    width: 50%;
+}
+
+ul{
+    font-weight: bold;
+    font-size: large;
+}

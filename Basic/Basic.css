@@ -1,0 +1,31 @@
+h1{
+    color:red;
+}
+
+h2{
+    background-color: gainsboro;
+}
+
+h3{
+    font-style: italic;
+}
+
+h4{
+    font:bold;
+}
+
+h5{
+    text-decoration: underline;
+    text-align: right;
+}
+
+p{
+    font-weight: bold;
+    text-align: justify;
+    background-color: beige;
+}
+
+button{
+    font-family:'Trebuchet MS';
+    font-weight:bold;
+}

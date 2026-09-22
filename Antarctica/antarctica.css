@@ -1,0 +1,169 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap")import;
+
+:root{
+    --body-background: #efefef;
+    --body-text-colour: #000000;
+    --body-font: "Orbitron", sans-serif;
+    --nav-colour: #33658a;
+    --nav-items-colour: #65e8ff;
+    --nav-items-active: white;
+    --hamburger-colour: white;
+    --fact-text-colour: #ece8ef;
+    --fact-background: #000500a5;
+}
+
+/* Nav Bar */ 
+nav{
+    padding: 0 15px;
+    height: 60px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--nav-colour);
+}
+
+/* Nav Items */
+.nav-items{
+    display: flex;
+    gap: 100px;
+}
+
+/* Nav Bar Links */
+.nav-items > a{
+    color: var(--nav-items-colour);
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+/* Nav Links Hover */
+.nav-items > a:hover{
+    color: var(--nav-items-active);
+}
+
+/* Nav Links Active*/
+.nav-items .active{
+    color: var(--nav-items-active);
+    pointer-events: none;
+}
+
+body{
+    background-color: var(--body-background);
+    color: var(--body-text-colour);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-font);
+}
+
+/* Main Image */
+.main-image{
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Home Main */
+.home-main{
+    background-image: url(images/antarctic-lights.jpg);
+}
+
+/* Wildlife Main */
+.wildlife-main{
+    background-image: url(images/antarctic-penguins.jpg);
+}
+
+/* Climate Main */
+.climate-main{
+    background-image: url(images/antarctic-daytime.jpg);
+}
+
+h1{
+    text-align: center;
+}
+
+/* Fact Holder - Homepage */
+.fact-holder{
+    display: grid;
+    min-height: 50vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+/* Fact Card*/
+.fact-card{
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+/* Home Images*/
+.sun{
+    background-image: url(images/antarctic-sun.jpg);
+}
+.discovery{
+    background-image: url(images/aerial-antarctica.jpeg);
+}
+.explorers{
+    background-image: url(images/explorers.jpg);
+}
+.antarctic-treaty{
+    background-image: url(images/world_flags.png);
+}
+
+/* Wildlife Images */
+.penguins{
+    background-image: url(images/wildlife-emperor-penguin.jpg);
+}
+.krill{
+    background-image: url(images/wildlife-krill.jpg);
+}
+.orca{
+    background-image: url(images/wildlife-orca.jpg);
+}
+.seal{
+    background-image: url(images/wildlife-seal.jpg);
+}
+
+/* Climate Images */
+.ice{
+    background-image: url(images/climate-ice.jpg);
+}
+.rain{
+    background-image: url(images/climate-rain.jpg);
+}
+.snow{
+    background-image: url(images/climate-snow.jpg);
+}
+.sun2{
+    background-image: url(images/climate-sun.jpg);
+}
+
+.fact{
+    font-size: 100%;
+    color: var(--fact-text-colour);
+    background-color: var(--fact-background);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.fact:hover{
+    opacity: 1;
+}
