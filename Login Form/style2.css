@@ -1,0 +1,105 @@
+/* Import Fonts */
+@font-face {
+  font-family: 'facebook-sans';
+  src: url('fonts/FacebookSansRegular.ttf') format('truetype'), /* TTF or TrueType Font*/
+       url('fonts/FacebookNarrowAppRegular.ttf') format('truetype'),
+       url('fonts/FacebookSansBold.ttf') format('truetype'),
+       url('fonts/FacebookSansBoldItalic.ttf') format('truetype'),
+       url('fonts/FacebookSansHairline.ttf') format('truetype'),
+       url('fonts/FacebookSansHairlineItalic.ttf') format('truetype'),
+       url('fonts/FacebookSansHeavy.ttf') format('truetype'),
+       url('fonts/FacebookSansHeavyItalic.ttf') format('truetype'),
+       url('fonts/FacebookSansLight.ttf') format('truetype'),
+       url('fonts/FacebookSansLightItalic.ttf') format('truetype')
+}
+
+/* Basic Elements*/
+body{
+    background-color: #f0f2f5;
+    font-family: 'facebook-sans', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: #1877F2;
+    font-size: 300%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: largee;
+    color: #131517;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #131517;
+    font-size: small;
+    font-weight: normal;
+    margin-top: -3vh;
+}
+
+/* Button */
+button:hover{
+    cursor: pointer;
+}
+
+.button{
+    width: 23vh;
+    padding: 2vh;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: #1fc019;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+    font-size: 14px;
+}
+
+hr{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border: none;
+    height: 0.1px;
+    background-color: rgb(219, 219, 219);
+}
+
+.text-box{
+    width: 45vh;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    border-width: 1px;
+    border-bottom-color: rgb(205, 203, 203);
+    border-right-color: rgb(205, 203, 203);
+    border-top-color: rgb(255, 255, 235);
+    border-left-color: rgb(255, 255, 235);
+}
+
+.border-input{
+    text-align: center;
+    width: 65vh;
+    background-color: rgb(255, 255, 255);
+    padding: 2vh;
+    border-radius: 3%;
+    margin-bottom: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right{
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}

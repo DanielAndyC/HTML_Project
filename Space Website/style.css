@@ -1,0 +1,226 @@
+/* class */
+.background{
+    min-height: 75vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG96OWhmeTdzaXZrNW5laTZ1NmtzNzRwN24xMmtqMWU3amFteW1xdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHIKETUlUINYvV7CAO/giphy.gif);
+}
+
+.nasa-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.main-image{
+    min-height: 50vh;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/8769.jpg);
+}
+
+.info{
+    font-size: 25px;
+    margin-left: 5vh;
+    margin-top: 5vh;
+    color: white;
+    text-shadow:
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px  1px 0 black,
+       1px  1px 0 black;
+}
+
+.nasa-logo{
+    margin-left: 5vh;
+    height: 15vh;
+    padding: 5vh;
+    transition: 0.3s ease-in-out;
+}
+
+.nasa-logo:hover{
+    scale: 1.5;
+}
+
+.spinning-image{
+    animation: rotation 60s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.source{
+    color: rgb(75, 75, 75); 
+    font-size: 2vh; 
+    float: right; 
+    margin-right: 5%; 
+    margin-top: -3%; 
+    font-family: 'Times New Roman', Times, serif; 
+    font-weight: normal;
+}
+
+.footer{
+    background-color: black;
+    min-height: 15vh;
+    text-align: left;
+    align-items: center;
+}
+
+/* Fact Card*/
+.fact-holder{
+    display: grid;
+    min-height: 50vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.fact-card{
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px black;
+    border: 1vh solid white;
+    box-sizing: border-box;
+}
+
+.fact{
+    font-size: 100%;
+    color: #ece8ef;
+    background-color: #000500a5;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.fact:hover{
+    opacity: 1;
+}
+
+/* Images Stars & Planets */
+.mercury{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2024/03/pia15162-mercury-basins-messenger-16x9-1.jpg?resize=600,338);
+}
+
+.venus{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2024/03/venus-mariner-10-pia23791-fig2-16x9-1.jpg?resize=600,338);
+}
+
+.earth{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2024/03/blue-marble-apollo-17-16x9-1.jpg?resize=600,338);
+}
+
+.mars{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2024/03/mars-full-globe-16x9-1.jpg?resize=600,338);
+}
+
+.jupiter{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2024/03/jupiter-marble-pia22946-16x9-1.jpg?resize=600,338);
+}
+
+.saturn{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2023/05/saturn-farewell-pia21345-sse-banner-1920x640-1.jpg?resize=600,200);
+}
+
+.uranus{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2024/03/uranus-pia18182-16x9-1.jpg?resize=600,338);
+}
+
+.neptune{
+    background-image: url(https://science.nasa.gov/wp-content/uploads/2024/03/pia01492-neptune-full-disk-16x9-1.jpg?resize=600,338);
+}
+
+/* Navigation */
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 0 15px;
+    height: 60px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+}
+
+.nav-items{
+    display: flex;
+    gap: 100px;
+}
+
+.nav-items > a{
+    color: rgb(165, 165, 165);
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.nav-items > a:hover{
+    color: white;
+}
+
+.nav-items .active{
+    color: white;
+    pointer-events: none;
+}
+
+/* Background */
+body{
+    cursor: url("image/ufo-cursor.png"), auto;
+    background-image: linear-gradient(to right, rgb(12, 0, 39), rgb(0, 87, 137));
+    color: rgb(212, 212, 212);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    cursor: url("image/ufo-pointer.png"), pointer;
+}
+
+h1{
+    margin-left: 5vh;
+    margin-top: 40vh;
+    color: rgb(0, 0, 0);
+    text-shadow:
+      -1px -1px 0 #ffffff,
+       1px -1px 0 #ffffff,
+      -1px  1px 0 #ffffff,
+       1px  1px 0 #ffffff;
+}
+
+h3{
+    margin-left: 5vh;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    margin-left: 5vh;
+    font-weight: bold;
+}
+
+.small{
+    font-size: 13px;
+}
